@@ -1,0 +1,22 @@
+{
+  "name": "nc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiii0125/brainerIntegrator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qiii0125/brainerIntegrator/issues"
+  },
+  "homepage": "https://github.com/qiii0125/brainerIntegrator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
