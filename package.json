@@ -18,5 +18,8 @@
   "homepage": "https://github.com/qiii0125/brainerIntegrator#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3"
   }
 }
