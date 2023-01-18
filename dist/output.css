@@ -743,6 +743,10 @@ video {
   align-self: center;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -778,10 +782,6 @@ video {
   background-color: rgb(20 184 166 / var(--tw-bg-opacity));
 }
 
-.bg-\[gambar\] {
-  background-color: gambar;
-}
-
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -800,14 +800,6 @@ video {
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
-  background-image: url('/img/hero-pattern.svg');
-}
-
-.bg-\[url\(\'dist\/img\/1\.png\'\)\] {
-  background-image: url('dist/img/1.png');
 }
 
 .bg-cover {
@@ -1014,13 +1006,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
-#home {
-}
-
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
@@ -1161,6 +1146,10 @@ html{
     width: 50%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:w-2\/3 {
     width: 66.666667%;
   }
@@ -1173,8 +1162,8 @@ html{
     background-color: transparent;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -1193,18 +1182,8 @@ html{
     line-height: 2.25rem;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
+  .lg\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
