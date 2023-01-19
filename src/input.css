@@ -30,3 +30,47 @@ body {
 .hamburger-active > span:nth-child(3) {
     @apply origin-top-left -rotate-45;
 }
+
+#tanya.active::after {
+    content: "\2212";
+}
+
+#content {
+    background-color: #fff;
+    color: black;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 9, 0.25);
+    padding: 4;
+}
+
+#tanya {
+    /* padding: 4;
+    min-height: 3.5rem;
+    line-height: 1.25rem; */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#tanya::after {
+    content: "\002b";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+#jawab {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#jawab-isi {
+    padding: 1rem;
+    line-height: 1.5rem;
+
+    border-top: 1px solid white;
+}
