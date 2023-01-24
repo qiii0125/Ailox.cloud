@@ -45,9 +45,9 @@ body {
 }
 
 #tanya {
-    /* padding: 4;
+    padding: 4;
     min-height: 3.5rem;
-    line-height: 1.25rem; */
+    line-height: 1.25rem;
     font-weight: bold;
     display: flex;
     align-items: center;
