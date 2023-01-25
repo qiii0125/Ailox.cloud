@@ -7,6 +7,7 @@
     <title>AiloxCloud</title>
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <!-- HeaderStart -->
@@ -22,6 +23,7 @@
                             <span class="hamburger-line transition duration-300 in-ease-out"></span>
                             <span class="hamburger-line transition duration-300 in-ease-out origin-top-left"></span>
                         </button>
+                        
                         <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none rounded-none">
                             <ul class="block lg:flex">
                                 <li class="group">
@@ -42,12 +44,15 @@
                                 <li class="group">
                                     <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
                                 </li>
-
+                                <li class="group">
+                                    <a  class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" id='google_translate_element'>Select Language:</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
+
         </header>
     <!-- HeaderEnd -->
     <!-- HeroStart -->
@@ -84,11 +89,11 @@
                     <h4 class="font-bold uppercase text-primary text-lg mb-3 text-center ">Why Us</h4>
                 </div>
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Apa AiloxCloud?</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">AiloxCloud adalah model komputasi cloud yang memungkinkan penyimpanan data dan file di internet melalui penyedia komputasi cloud yang Anda akses, baik melalui internet publik ataupun koneksi jaringan privat khusus.</p>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">What is AiloxCloud?</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">AiloxCloud is a cloud computing model that allows data and file storage on the internet through a cloud computing provider that you access, either via the public internet or a special private network connection.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl ">Mengapa AiloxCloud?</h3>
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl ">Why AiloxCloud?</h3>
                     <ul class="">
                         <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Increase Service Level</li>
                         <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Increase Accuracy</li>
@@ -117,7 +122,7 @@
                         <svg  width="100" height="100"class="mx-auto" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Nintendo GameCube</title><path d="M6.816 15.126l4.703 2.715v-5.433L6.814 9.695v5.432zm-2.025 1.168l6.73 3.882v3.82L1.481 18.206V6.616l3.31 1.91v7.769zM12 6.145L7.298 8.863 12 11.579l4.704-2.717L12 6.146zm0-2.332l5.659 3.274 3.31-1.91L12 0 1.975 5.79 5.28 7.695zm7.207 12.48v-3.947l-2.023 1.167v1.614l-4.703 2.715v.005-5.436L22.518 6.62v11.587L12.48 24v-3.817l6.727-3.887z"/></svg>
                     </div>
                     <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">INBOUND</h3>
-                    <p class="font-medium text-base text-secondary">Proses penerimaan dan penyimpanan barang. Barang yang diterima bisa dari hasil produksi, supplier transfer ataupun barang retur.</p>
+                    <p class="font-medium text-base text-secondary">The process of receiving and storing goods. Goods received can be from production, supplier transfers or returned goods.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -126,7 +131,7 @@
                           </svg>
                     </div>
                     <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">INVENTORY</h3>
-                    <p class="font-medium text-base text-secondary">Menampilkan rincian dan summary barang stock-on-hand dan in-transit. Inventory memiliki banyak informasi sesuai dengan karakter barang yang ada di dalam gudang.</p>
+                    <p class="font-medium text-base text-secondary">Displays details and a summary of stock-on-hand and in-transit items. Inventory has a lot of information according to the character of the goods in the warehouse.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -135,7 +140,7 @@
                           </svg>
                     </div>
                     <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">OUTBOUND</h3>
-                    <p class="font-medium text-base text-secondary">Pengambilan secara satuan ataupun berdasarkan Batch sesuai preference. Mempercepat proses pengeluaran dan juga pembagian kerja operator.</p>
+                    <p class="font-medium text-base text-secondary">Collection individually or based on Batch according to preference. Speed up the process of spending and also the division of labor operators.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -169,7 +174,7 @@
                           </svg>
                     </div>
                     <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">HIGH VISIBILITY</h3>
-                    <p class="font-medium text-base text-secondary">Dapat menggunakan modul tambahan untuk Dashboard, Business Intelligence(BI) dan Report</p>
+                    <p class="font-medium text-base text-secondary">Can use additional modules for Dashboard, Business Intelligence (BI) and Reports</p>
                 </div>
             </div>
         </div>
@@ -217,6 +222,12 @@
                     <a href="" target="_blank" class="max-w-[140px] mx-2 py-2 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/dr-gadget-rev.png" alt="">
                     </a>
+                    <a href="" target="_blank" class="max-w-[120px] mx-2 py-2 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/1.svg" alt="">
+                    </a>
+                    <a href="" target="_blank" class="max-w-[120px] mx-2 py-2 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/2.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -236,56 +247,60 @@
                 <div class="mx-auto  mb-16">
                     <div id="content" >
                         <div id="tanya" class="p-4">
-                            Industri apa yang dapat menggunakan Ailox wms?
+                            What industries can use Ailox wms?
                         </div>
                         <div id="jawab">
                             <div id="jawab-isi">
-                                Semua industri yang memiliki gudang dapat dan sangat perlu menggunakan sebuah sistem manajemen gudang atau wms. Baik itu industri manufaktur, retail, penyewaan gudang, 3PL dan lain-lain.
+                                All industries that have warehouses can and should use a warehouse management system or WMS. Whether it's the manufacturing industry, retail, warehouse rental, 3PL and others.
                             </div>
                         </div>
                     </div>
                     <div id="content">
                         <div id="tanya" class="p-4">
-                          Gudang seperti apa yang dapat menggunakan Ailox wms?
+                            What kind of warehouse can use Ailox wms?
                         </div>
                         <div id="jawab">
                             <div id="jawab-isi">
-                            Hampir semua gudang bisa menggunakan Ailox wms. Baik itu gudang yang memiliki penyimpanan yang menggunakan selective racking, double deep, drive-in, single atau multi level floor, open yard dan lain-lainnya.                            </div>
+                                Almost all warehouses can use Ailox wms. Whether it's a warehouse that has storage using selective racking, double deep, drive-in, single or multi-level floors, open yards and others.
+                            </div>
                         </div>
                     </div>
                     <div id="content">
                         <div id="tanya" class="p-4">
-                          Berapa lama waktu yang dibutuhkan untuk implementasi?
+                            How long will it take for implementation?
                         </div>
                         <div id="jawab">
                             <div id="jawab-isi">
-                                Waktu implementasi berbeda-beda, tergantung luas gudang, operasional, jenis barang dan beberapa parameter lainnya. Namun pada umumnya jika tidak ada faktor tertentu, implementasi memakan waktu 3(tiga) bulan terhitung sejak Kick-off sampai dengan Live.                            </div>
+                                The implementation time varies, depending on the size of the warehouse, operations, types of goods and several other parameters. But in general, if there are no certain factors, implementation takes 3 (three) months from the Kick-off to Live.
+                            </div>
                         </div>
                     </div>
                     <div id="content">
                         <div id="tanya" class="p-4">
-                          Apakah harus membeli ataukah ada sistem sewa untuk Ailox wms?
+                            Do you have to buy or is there a rental system for Ailox wms?
                         </div>
                         <div id="jawab">
                             <div id="jawab-isi">
-                                Ailox wms memiliki dua jenis lisensi:
+                                Ailox wms has two types of licenses:
                                 <ul>
                                     <li>
-                                        1. Yang pertama adalah dengan cara membeli software Ailox wms dan di-install pada server gudang (on-premises).
+                                        1. The first is by purchasing the Ailox WMS software and installing it on a warehouse server (on-premises).
                                     </li>
                                     <li>
-                                        2. Cara kedua adalah melakukan sewa (SaaS) yang pembayaran dapat dilakukan setiap 3(tiga) bulan. Untuk SaaS, software menggunakan Ailox wms SaaS yang ada pada server kami, dan dapat diakses dari manapun menggunakan jaringan internet.                            </div>
+                                        2. The second way is to rent (SaaS) where payments can be made every 3 (three) months. For SaaS, the software uses Ailox wms SaaS which is on our server, and can be accessed from anywhere using the internet network.
                                     </li>
                                 </ul>
+                            </div>
                         </div>
                     </div>
                     <div id="content">
                         <div id="tanya" class="p-4">
-                          Apa saja yang di butuhkan agar bisa menjalankan Ailox wms?
+                            What do you need to be able to run Ailox wms?
                         </div>
                         <div id="jawab">
                             <div id="jawab-isi">
-                                Ailox wms dapat berjalan pada mode handheld/paperless ataupun pada mode paperbased. Device yang dibutuhkan adalah server, pc, mobile computing dengan 1D/2D scanner (android based), printer barcode, access point.                            </div>
+                                Ailox wms can run in handheld/paperless mode or in paperbased mode. The devices needed are servers, PCs, mobile computing with 1D/2D scanners (android based), barcode printers, access points.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -300,13 +315,13 @@
             <div class="w-full px-4">
                 <div class=" mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2 ">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact us</h2>
                 </div>
             </div>
             <form action="">
                 <div class="w-full lg:w-2/3 mx-auto">
                     <div class="w-full px-4 mb-8">
-                        <label for="mail" class="text-base text-primary font-bold">Nama</label>
+                        <label for="mail" class="text-base text-primary font-bold">Name</label>
                         <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-8">
@@ -314,11 +329,11 @@
                         <input type="email" id="mail" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-8">
-                    <label for="massage" class="text-base text-primary font-bold">Pesan</label>
+                    <label for="massage" class="text-base text-primary font-bold">Massages</label>
                     <textarea type="text" id="massage" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary h-32"></textarea>
                 </div>
                 <div class="w-full px-4">
-                    <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                    <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
                 </div>
                 </div>
             </form>
@@ -337,7 +352,7 @@
                     <p>15810</p>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
-                        <h3 class="font-semibold text-white mb-5">Tautan</h3>
+                        <h3 class="font-semibold text-white mb-5">Link</h3>
                         <ul class="text-slate-300">
                             <li>
                                 <a href="#home" class="inline-block text-base hover:text-primary mb-2">Home</a>                                
@@ -357,7 +372,7 @@
                         </ul>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
-                        <h3 class="font-semibold text-white mb-5">Media Sosial</h3>
+                        <h3 class="font-semibold text-white mb-5">Social Media</h3>
                         <ul class="text-slate-300">
                             <li>
                                 <i class="fa-brands fa-instagram"></i>  <a href="" class="inline-block text-base hover:text-primary mb-2">ailox_wms</a>                                
@@ -379,6 +394,5 @@
     <!-- FooterEnd -->
 
 <script src="dist/js/script.js"></script>
-
 </body>
 </html>
