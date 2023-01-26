@@ -25,29 +25,66 @@
                             <span class="hamburger-line transition duration-300 in-ease-out origin-top-left"></span>
                         </button>
                         
-                        <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none rounded-none">
+                        <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-500 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none rounded-none ">
                             <ul class="block lg:flex">
-                                <li class="group">
-                                    <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                <!-- <li class="group">
+                                    <ul class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">
+                                        <li>
+                                            <label for="bahasa" key="pilih" class="lang">Languages: </label>
+                                        </li>
+                                        <li >
+                                            <select name="" id="">
+                                                <option value="eng" key="ing" class="lang" id="en">English</option>
+                                                <option value="ind" key="ind" class="lang" id="id">Indonesian</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                    
+                                </li> -->
+                                <li class="group cursor-pointer relative" >
+                                    <p href="#" id="pilih" key="pilih" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Select Languages:</p>
+                                    <ul class="hidden bg-sky-100 relative rounded-lg shadow-lg " id="bahasa">
+                                        <li >
+                                            <p href="#" key="ing" id="en" class="lang relative translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white">English</p>
+                                        </li>
+                                        <li >
+                                            <p href="#" key="ind" id="id" class="lang relative translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white">Indonesian</p>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="group">
-                                    <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Why Us</a>
+                                    <a href="#home"  key="Home" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                                 </li>
                                 <li class="group">
-                                    <a href="#feature" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Feature</a>
+                                    <a href="#about" key="About" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Why Us</a>
                                 </li>
                                 <li class="group">
-                                    <a href="#client" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Client</a>
+                                    <a href="#feature" key="Feature" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Feature</a>
                                 </li>
                                 <li class="group">
-                                    <a href="#FAQ" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">FAQ</a>
+                                    <a href="#client" key="Client" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Client</a>
                                 </li>
                                 <li class="group">
-                                    <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                                    <a href="#FAQ"  class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">FAQ</a>
                                 </li>
                                 <li class="group">
-                                    <a  class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" id='google_translate_element'>Select Language:</a>
+                                    <a href="#contact" key="Contact" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
                                 </li>
+                                <!-- <li class="group">
+                                    <a  class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white" id='google_translate_element'></a>
+                                </li> -->
+                                <!-- <li class="flex items-center pl-8">
+                                    <div class="flex">
+                                        <span class="mr-2 text-sm text-slate-500">Light</span>
+                                        <input type="checkbox" name="" id="dark-toggle" class="hidden">
+                                        <label for="dark-toggle">
+                                            <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                                <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                                            </div>
+                                        </label>
+                                        <span class="mr-2 text-sm text-slate-500">Dark</span>
+                                    </div>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>
@@ -57,15 +94,16 @@
         </header>
     <!-- HeaderEnd -->
     <!-- HeroStart -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 ">
         <div class="container">
             <!-- <div class="w-full mx-auto absolute bg-cover h-full left-0 -z-2 block lg:">
                 <img src="dist/img/cloud.jpg" alt="">
             </div> -->
             <div class="flex flex-wrap">
                 <div class="w-full self-center text-center px-4 z-10  relative top-[50%] lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary text-5xl mb-5 lg:text-7xl">Ailox<span class="font-bold text-dark">Cloud</span></h1>
-                    <a href="#about" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out">Start</a>
+                    <h1 class="text-base block font-semibold text-primary text-4xl mb-5 lg:text-6xl">Cloud</h1>
+                    <h2 class="font-mendium text-dark text-lg mb-5">Warehouse Management System</h2>
+                    <a href="#about" key="start" class="lang text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover: opacity-80 transition duration-300 ease-in-out">Start</a>
                 </div>
                 <div class="w-full self-end px-4  block lg:w-1/2 lg:hidden">
                     <div id="cloud" class="relative mt-10 lg:mt-0 right-0 ">
@@ -75,7 +113,7 @@
                 </div>
                 <div class="w-full self-end px-4 hidden lg:w-1/2 lg:block">
                     <div id="cloud" class="relative mt-10 lg:mt-0 right-0 ">
-                        <img src="dist/img/AiloxCloud.svg" alt="" class="max-w-full mx-auto">
+                        <img src="dist/img/AiloxCloud2.svg" alt="" class="max-w-full mx-auto shadow-xl rounded-xl opacity-80">
                     </div>
                 </div>
             </div>
@@ -87,20 +125,20 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3 text-center ">Why Us</h4>
+                    <h4 key="whyus" class="lang font-bold uppercase text-primary text-lg mb-3 text-center ">Why Us</h4>
                 </div>
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">What is AiloxCloud?</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">AiloxCloud is a cloud computing model that allows data and file storage on the internet through a cloud computing provider that you access, either via the public internet or a special private network connection.</p>
+                    <h2 key="whatis" class="lang font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">What is AiloxCloud?</h2>
+                    <p key="ACis" class="lang font-medium text-base text-secondary max-w-xl lg:text-lg">AiloxCloud is a cloud computing model that allows data and file storage on the internet through a cloud computing provider that you access, either via the public internet or a special private network connection.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl ">Why AiloxCloud?</h3>
+                    <h3 key="whyAC" class="lang font-semibold text-dark text-2xl mb-4 lg:text-3xl ">Why AiloxCloud?</h3>
                     <ul class="">
-                        <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Increase Service Level</li>
-                        <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Increase Accuracy</li>
-                        <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Increase Visibility</li>
-                        <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Increase Speed</li>
-                        <li class="mb-2"><i class="fa-regular fa-circle-check"></i> Reduce Operational Cost</li>
+                        <li key="why1" class="lang mb-2"><i class="fa-regular fa-circle-check"></i> Increase Service Level</li>
+                        <li key="why2" class="lang mb-2"><i class="fa-regular fa-circle-check"></i> Increase Accuracy</li>
+                        <li key="why3" class="lang mb-2"><i class="fa-regular fa-circle-check"></i> Increase Visibility</li>
+                        <li key="why4" class="lang mb-2"><i class="fa-regular fa-circle-check"></i> Increase Speed</li>
+                        <li key="why5" class="lang mb-2"><i class="fa-regular fa-circle-check"></i> Reduce Operational Cost</li>
                       </ul>
                 </div>
             </div>
@@ -112,9 +150,9 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class=" mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Featrue</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4">AiloxCloud Feature</h2>
-                    <p class="font-medium text-md text-secondary ">To design a solution customized to suit your specific requirements, we would start by studying and understanding your underlying and principal objectives. We would then sit down with your operational and IT team to define the functional flows and business processes most suitable to your operations, while also providing the feedback on the best practices in the industries. Based on the agreed functional flows, we would then design and develop a specific supply chain solution, in order to fulfill your business and process requirements.</p>
+                    <h4 key="Feature" class="lang font-semibold text-lg text-primary mb-2">Featrue</h4>
+                    <h2 key="ACfeature" class="lang font-bold text-dark text-3xl mb-4">AiloxCloud Feature</h2>
+                    <p key="acFeature" class="lang font-medium text-md text-secondary ">To design a solution customized to suit your specific requirements, we would start by studying and understanding your underlying and principal objectives. We would then sit down with your operational and IT team to define the functional flows and business processes most suitable to your operations, while also providing the feedback on the best practices in the industries. Based on the agreed functional flows, we would then design and develop a specific supply chain solution, in order to fulfill your business and process requirements.</p>
                 </div>
             </div>
             <div class="w-full px-4 flex flex-wrap justify-center text-center xl:w-9/12 xl:mx-auto">
@@ -122,8 +160,8 @@
                     <div class="">
                         <svg  width="100" height="100"class="mx-auto" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Nintendo GameCube</title><path d="M6.816 15.126l4.703 2.715v-5.433L6.814 9.695v5.432zm-2.025 1.168l6.73 3.882v3.82L1.481 18.206V6.616l3.31 1.91v7.769zM12 6.145L7.298 8.863 12 11.579l4.704-2.717L12 6.146zm0-2.332l5.659 3.274 3.31-1.91L12 0 1.975 5.79 5.28 7.695zm7.207 12.48v-3.947l-2.023 1.167v1.614l-4.703 2.715v.005-5.436L22.518 6.62v11.587L12.48 24v-3.817l6.727-3.887z"/></svg>
                     </div>
-                    <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">INBOUND</h3>
-                    <p class="font-medium text-base text-secondary">The process of receiving and storing goods. Goods received can be from production, supplier transfers or returned goods.</p>
+                    <h3 class="lang font-semi bold text-xl text-dark mt-5 mb-3" key="inbound">INBOUND</h3>
+                    <p class="lang font-medium text-base text-secondary" key="inboundIsi">The process of receiving and storing goods. Goods received can be from production, supplier transfers or returned goods.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -131,8 +169,8 @@
                             <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
                           </svg>
                     </div>
-                    <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">INVENTORY</h3>
-                    <p class="font-medium text-base text-secondary">Displays details and a summary of stock-on-hand and in-transit items. Inventory has a lot of information according to the character of the goods in the warehouse.</p>
+                    <h3 class="lang font-semi bold text-xl text-dark mt-5 mb-3" key="inventory">INVENTORY</h3>
+                    <p class="lang font-medium text-base text-secondary" key="inventoryIsi">Displays details and a summary of stock-on-hand and in-transit items. Inventory has a lot of information according to the character of the goods in the warehouse.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -140,8 +178,8 @@
                             <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                           </svg>
                     </div>
-                    <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">OUTBOUND</h3>
-                    <p class="font-medium text-base text-secondary">Collection individually or based on Batch according to preference. Speed up the process of spending and also the division of labor operators.</p>
+                    <h3 class="lang font-semi bold text-xl text-dark mt-5 mb-3" key="outbound">OUTBOUND</h3>
+                    <p class="lang font-medium text-base text-secondary" key="outboundIsi">Collection individually or based on Batch according to preference. Speed up the process of spending and also the division of labor operators.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -152,8 +190,8 @@
                             <path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
                             <path d="M12 9h2V8h-2v1Z"/>
                           </svg>                    </div>
-                    <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">QR CODE/BARCODE</h3>
-                    <p class="font-medium text-base text-secondary">Facilitate real time transactions in the warehouse, quicker and more accurate data capture. It will in turn improve the speed of operations, accuracy of the warehouse transactions, and less human intervention and paper work / documentation</p>
+                    <h3 class="lang font-semi bold text-xl text-dark mt-5 mb-3" key="qr">QR CODE/BARCODE</h3>
+                    <p class="lang font-medium text-base text-secondary" key="qrIsi">Facilitate real time transactions in the warehouse, quicker and more accurate data capture. It will in turn improve the speed of operations, accuracy of the warehouse transactions, and less human intervention and paper work / documentation</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -163,8 +201,8 @@
                             <path d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"/>
                             <path d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"/>
                           </svg>                    </div>
-                    <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">INTEGRATION CAPABILITY</h3>
-                    <p class="font-medium text-base text-secondary">Seamless integration into your back end systems, via different integration methods. Improve the accuracy and reduce the requirement for data entry operator</p>
+                    <h3 class="lang font-semi bold text-xl text-dark mt-5 mb-3" key="ic">INTEGRATION CAPABILITY</h3>
+                    <p class="lang font-medium text-base text-secondary" key="icIsi">Seamless integration into your back end systems, via different integration methods. Improve the accuracy and reduce the requirement for data entry operator</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="">
@@ -174,8 +212,8 @@
                             <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
                           </svg>
                     </div>
-                    <h3 class="font-semi bold text-xl text-dark mt-5 mb-3">HIGH VISIBILITY</h3>
-                    <p class="font-medium text-base text-secondary">Can use additional modules for Dashboard, Business Intelligence (BI) and Reports</p>
+                    <h3 class="lang font-semi bold text-xl text-dark mt-5 mb-3" key="hv">HIGH VISIBILITY</h3>
+                    <p class="lang font-medium text-base text-secondary" key="hvIsi">Can use additional modules for Dashboard, Business Intelligence (BI) and Reports</p>
                 </div>
             </div>
         </div>
@@ -187,8 +225,8 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class=" mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2 ">Client</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Our Client</h2>
+                    <h4 class="lang font-semibold text-lg text-primary mb-2 " key="Client">Client</h4>
+                    <h2 class="lang font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Our Client</h2>
                 </div>
             </div>
             <div class="w-full px-4">
@@ -241,53 +279,53 @@
             <div class="w-full px-4">
                 <div class=" mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2 ">FAQ</h4>
-                    <h2 class="font-normal text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Frequently Asked Questions</h2>
+                    <h2 class="lang font-normal text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl" key="FAQ">Frequently Asked Questions</h2>
                 </div>
             </div>
             <div class="w-full px-4">
                 <div class="mx-auto  mb-16">
                     <div id="content" >
-                        <div id="tanya" class="p-4">
+                        <div id="tanya" class="lang p-4" key="FAQ1">
                             What industries can use Ailox wms?
                         </div>
                         <div id="jawab">
-                            <div id="jawab-isi">
+                            <div id="jawab-isi" key="FAQ1isi" class="lang">
                                 All industries that have warehouses can and should use a warehouse management system or WMS. Whether it's the manufacturing industry, retail, warehouse rental, 3PL and others.
                             </div>
                         </div>
                     </div>
                     <div id="content">
-                        <div id="tanya" class="p-4">
+                        <div id="tanya" class="lang p-4" key="FAQ2" >
                             What kind of warehouse can use Ailox wms?
                         </div>
                         <div id="jawab">
-                            <div id="jawab-isi">
+                            <div id="jawab-isi" key="FAQ2isi" class="lang">
                                 Almost all warehouses can use Ailox wms. Whether it's a warehouse that has storage using selective racking, double deep, drive-in, single or multi-level floors, open yards and others.
                             </div>
                         </div>
                     </div>
                     <div id="content">
-                        <div id="tanya" class="p-4">
+                        <div id="tanya" class="lang p-4" key="FAQ3">
                             How long will it take for implementation?
                         </div>
                         <div id="jawab">
-                            <div id="jawab-isi">
+                            <div id="jawab-isi" key="FAQ3isi" class="lang">
                                 The implementation time varies, depending on the size of the warehouse, operations, types of goods and several other parameters. But in general, if there are no certain factors, implementation takes 3 (three) months from the Kick-off to Live.
                             </div>
                         </div>
                     </div>
                     <div id="content">
-                        <div id="tanya" class="p-4">
+                        <div id="tanya" class="lang p-4" key="FAQ4">
                             Do you have to buy or is there a rental system for Ailox wms?
                         </div>
                         <div id="jawab">
-                            <div id="jawab-isi">
+                            <div id="jawab-isi" key="FAQ4isi" class="lang">
                                 Ailox wms has two types of licenses:
                                 <ul>
-                                    <li>
+                                    <li key="FAQ4isi1" class="lang">
                                         1. The first is by purchasing the Ailox WMS software and installing it on a warehouse server (on-premises).
                                     </li>
-                                    <li>
+                                    <li key="FAQ4isi2" class="lang">
                                         2. The second way is to rent (SaaS) where payments can be made every 3 (three) months. For SaaS, the software uses Ailox wms SaaS which is on our server, and can be accessed from anywhere using the internet network.
                                     </li>
                                 </ul>
@@ -295,11 +333,11 @@
                         </div>
                     </div>
                     <div id="content">
-                        <div id="tanya" class="p-4">
+                        <div id="tanya" class="lang p-4" key="FAQ5">
                             What do you need to be able to run Ailox wms?
                         </div>
                         <div id="jawab">
-                            <div id="jawab-isi">
+                            <div id="jawab-isi" key="FAQ5isi" class="lang">
                                 Ailox wms can run in handheld/paperless mode or in paperbased mode. The devices needed are servers, PCs, mobile computing with 1D/2D scanners (android based), barcode printers, access points.
                             </div>
                         </div>
@@ -315,26 +353,26 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class=" mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2 ">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact us</h2>
+                    <h4 class="lang font-semibold text-lg text-primary mb-2 " key="Contact">Contact</h4>
+                    <h2 class="lang font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl" key="cu">Contact us</h2>
                 </div>
             </div>
             <form action="">
                 <div class="w-full lg:w-2/3 mx-auto">
                     <div class="w-full px-4 mb-8">
-                        <label for="mail" class="text-base text-primary font-bold">Name</label>
+                        <label for="mail" class="lang text-base text-primary font-bold" key="name">Name</label>
                         <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-8">
-                        <label for="name" class="text-base text-primary font-bold">Email</label>
+                        <label for="name" class="lang text-base text-primary font-bold" key="email">Email</label>
                         <input type="email" id="mail" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary">
                     </div>
                     <div class="w-full px-4 mb-8">
-                    <label for="massage" class="text-base text-primary font-bold">Messages</label>
+                    <label for="massage" class="lang text-base text-primary font-bold" key="message">Messages</label>
                     <textarea type="text" id="massage" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary h-32"></textarea>
                 </div>
                 <div class="w-full px-4">
-                    <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
+                    <button class="lang text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500" key="send">Send</button>
                 </div>
                 </div>
             </form>
@@ -353,27 +391,30 @@
                     <p>15810</p>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
-                        <h3 class="font-semibold text-white mb-5">Link</h3>
+                        <h3 class="lang font-semibold text-white mb-5" key="link">Link</h3>
                         <ul class="text-slate-300">
                             <li>
-                                <a href="#home" class="inline-block text-base hover:text-primary mb-2">Home</a>                                
+                                <a href="#home" key="Home" class="lang inline-block text-base hover:text-primary mb-2">Home</a>                                
                             </li>
                             <li>
-                                <a href="#about" class="inline-block text-base hover:text-primary mb-2">Why Us</a>                                
+                                <a href="#about" key="About" class="lang inline-block text-base hover:text-primary mb-2">Why Us</a>                                
                             </li>
                             <li>
-                                <a href="#feature" class="inline-block text-base hover:text-primary mb-2">Feature</a>                                
+                                <a href="#feature" key="Feature" class="lang inline-block text-base hover:text-primary mb-2">Feature</a>                                
                             </li>
                             <li>
-                                <a href="#client" class="inline-block text-base hover:text-primary mb-2">Clients</a>                                
+                                <a href="#client" key="Client" class="lang inline-block text-base hover:text-primary mb-2">Clients</a>                                
                             </li>
                             <li>
-                                <a href="#contact" class="inline-block text-base hover:text-primary mb-2">Contact</a>                                
+                                <a href="#client"  class="lang inline-block text-base hover:text-primary mb-2">FAQ</a>                                
+                            </li>
+                            <li>
+                                <a href="#contact" key="Contact" class="lang inline-block text-base hover:text-primary mb-2">Contact</a>                                
                             </li>
                         </ul>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
-                        <h3 class="font-semibold text-white mb-5">Social Media</h3>
+                        <h3 class="lang font-semibold text-white mb-5" key="sosmed">Social Media</h3>
                         <ul class="text-slate-300">
                             <li>
                                 <i class="fa-brands fa-instagram"></i>  <a href="" class="inline-block text-base hover:text-primary mb-2">ailox_wms</a>                                
@@ -395,5 +436,6 @@
     <!-- FooterEnd -->
 
 <script src="dist/js/script.js"></script>
+<!-- <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 </body>
 </html>

@@ -7,6 +7,13 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
+// window.addEventListener('click', function(e){
+//   if(e.target != hamburger && e.target !=navMenu) {
+//     hamburger.classList.remove('hamburger-active');
+//     navMenu.classList.add('hidden');
+//   }
+// });
+
 //navbar fix
 window.onscroll = function() {
     const header = document.querySelector('header');
@@ -37,545 +44,155 @@ ItemHeaders.forEach(ItemHeader => {
 });
 
 
-//
-// const bahasa = document.querySelectorAll('#bahasa');
-
-// bahasa.addEventListener('click', function() {
-//     bahasa.classList.toggle('bahasa-active');  
-//     navMenu.classList.toggle('hidden');
-// });
 
 
-// function googleTranslateElementInit() {
-//     new google.translate.TranslateElement({pageLanguage: 'id'}, 'google_translate_element');
-//  }
-//  function triggerHtmlEvent(element, eventName) {
-//     var event;
-//     if (document.createEvent) {
-//       event = document.createEvent('HTMLEvents');
-//       event.initEvent(eventName, true, true);
-//       element.dispatchEvent(event);
-//     } else {
-//       event = document.createEventObject();
-//       event.eventType = eventName;
-//       element.fireEvent('on' + event.eventType, event);
-//     }
-//  }
-//  $(document).ready(function(){
-//     $(".lang-select").click(function(){
-//       var theLang = $(this).attr('data-lang');
-//       $(".goog-te-combo").val(theLang);
-//       window.location = $(this).attr('href');
-//       window.location.reload();
-//     });
-//  });
- 
-// function googleTranslateElementInit() {
-//     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-//   }
+    var arrLang = {
+        "en": {
+            "pilih": "Select Languages",
+            "eng": "English",
+            "ind": "Indonesian",
+          "Home": "Home",
+          "About": "About Us",
+          "Feature": "Feature",
+          "Client": "Clients",
+          "Contact": "Contact",
+          "start": "Start",
+          "whyus": "Why Us",
+          "whatis": "What is AiloxCloud?",
+          "ACis": "AiloxCloud is a cloud computing model that allows data and file storage on the internet through a cloud computing provider that you access, either via the public internet or a special private network connection.",
+          "whyAC": "Why AiloxCloud?",
+          "why1": "Increase Service Level",
+          "why2": "Increase Accuracy",
+          "why3": "Increase Visibility",
+          "why4": "Increase Speed",
+          "why5": "Reduce Operational Cost",
+          "ACfeature": "AiloxCloud Feature",
+          "acFeature": "To design a solution customized to suit your specific requirements, we would start by studying and understanding your underlying and principal objectives. We would then sit down with your operational and IT team to define the functional flows and business processes most suitable to your operations, while also providing the feedback on the best practices in the industries. Based on the agreed functional flows, we would then design and develop a specific supply chain solution, in order to fulfill your business and process requirements.",
+          "inbound": "INBOUND",
+          "inboundIsi": "The process of receiving and storing goods. Goods received can be from production, supplier transfers or returned goods.",
+          "inventory": "INVENTORY",
+          "inventoryIsi": "Displays details and a summary of stock-on-hand and in-transit items. Inventory has a lot of information according to the character of the goods in the warehouse.",
+          "outbound": "OUTBOUND",
+          "outboundIsi": "Collection individually or based on Batch according to preference. Speed up the process of spending and also the division of labor operators.",
+          "qr": "QR CODE/BARCODE",
+          "qrIsi": "Facilitate real time transactions in the warehouse, quicker and more accurate data capture. It will in turn improve the speed of operations, accuracy of the warehouse transactions, and less human intervention and paper work / documentation",
+          "ic": "INTEGRATION CAPABILITY",
+          "icIsi": "Seamless integration into your back end systems, via different integration methods. Improve the accuracy and reduce the requirement for data entry operator",
+          "hv": "HIGH VISIBILITY",
+          "hvIsi": "Can use additional modules for Dashboard, Business Intelligence (BI) and Reports",
+          "OC": "Our Client",
+          "FAQ": "Frequently Asked Questions",
+          "FAQ1": "What industries can use Ailox wms?",
+          "FAQ1isi": "All industries that have warehouses can and should use a warehouse management system or WMS. Whether it's the manufacturing industry, retail, warehouse rental, 3PL and others.",
+          "FAQ2": "What kind of warehouse can use Ailox wms?",
+          "FAQ2isi": "Almost all warehouses can use Ailox wms. Whether it's a warehouse that has storage using selective racking, double deep, drive-in, single or multi-level floors, open yards and others.",
+          "FAQ3": "How long will it take for implementation?",
+          "FAQ3isi": "The implementation time varies, depending on the size of the warehouse, operations, types of goods and several other parameters. But in general, if there are no certain factors, implementation takes 3 (three) months from the Kick-off to Live.",
+          "FAQ4": "Do you have to buy or is there a rental system for Ailox wms?",
+          "FAQ4isi": "Ailox wms has two types of licenses:",
+          "FAQ4isi1": "1. The first is by purchasing the Ailox WMS software and installing it on a warehouse server (on-premises).",
+          "FAQ4isi2": "2. The second way is to rent (SaaS) where payments can be made every 3 (three) months. For SaaS, the software uses Ailox wms SaaS which is on our server, and can be accessed from anywhere using the internet network.",
+          "FAQ5": "What do you need to be able to run Ailox wms?",
+          "FAQ5isi": "Ailox wms can run in handheld/paperless mode or in paperbased mode. The devices needed are servers, PCs, mobile computing with 1D/2D scanners (android based), barcode printers, access points.",
+          "cu": "Contact us",
+          "name": "Name",
+          "email": "Email",
+          "message": "Messages",
+          "send": "Send",
+          "link": "Link",
+          "sosmed": "Social Media",
 
-// function googleTranslateElementInit() {
-//     new google.translate.TranslateElement({ 
-//     defaultLanguage: 'en',
-//     pageLanguage: 'en',
-//     includedLanguages: 'en,id',
-//     layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-//     autoDisplay: false,
-//     multilanguagePage: true}, 'google_translate_element')
-//     };
+        },
+        "id": {
+            "pilih": "Pilih Bahasa",
+            "eng": "Inggris",
+            "ind": "Indonesia",
+          "Home": "Beranda",
+          "About": "Tentang Kami",
+          "Feature": "Fitur",
+          "Client": "Klien",
+          "Contact": "Kontak",
+          "whyus": "Mengapa Kami",
+          "start": "Mulai",
+          "whatis": "Apa itu AiloxCloud",
+          "ACis": "AiloxCloud adalah model komputasi awan yang memungkinkan penyimpanan data dan file di internet melalui penyedia komputasi awan yang Anda akses, baik melalui internet publik atau koneksi jaringan pribadi khusus.",
+          "whyAC": "Mengapa AioxCloud?",
+          "why1": "Meningkatkan Tingkat Layanan",
+          "why2": "Meningkatkan Akurasi",
+          "why3": "Meningkatkan Visibilitas",
+          "why4": "Meningkatkan kecepatan",
+          "why5": "Mengurangi Biaya Operasional",
+          "ACfeature": "Fitur AiloxCloud",
+          "acFeature": "Untuk merancang solusi yang disesuaikan dengan kebutuhan spesifik Anda, kami akan mulai dengan mempelajari dan memahami tujuan dasar dan utama Anda. Kami kemudian akan duduk bersama tim operasional dan TI Anda untuk menentukan alur fungsional dan proses bisnis yang paling sesuai dengan operasi Anda, sekaligus memberikan umpan balik tentang praktik terbaik di industri. Berdasarkan alur fungsional yang disepakati, kami kemudian akan merancang dan mengembangkan solusi rantai pasokan khusus, untuk memenuhi kebutuhan bisnis dan proses Anda.",
+          "inbound": "INBOUND(MASUK)",
+          "inboundIsi": "Proses penerimaan dan penyimpanan barang. Barang yang diterima bisa dari hasil produksi, transfer supplier atau barang retur.",
+          "inventory": "INVENTORY(INVENTARIS)",
+          "inventoryIsi": "Menampilkan detail dan ringkasan stok barang yang ada dan dalam perjalanan. Persediaan memiliki banyak informasi sesuai dengan karakter barang di gudang.",
+          "outbound": "OUTBOUND(KELUAR)",
+          "outboundIsi": "Koleksi individual atau berdasarkan Batch sesuai preferensi. Mempercepat proses pengeluaran dan juga pembagian tenaga kerja operator.",
+          "qr": "QR CODE/BARCODE(KODE QR)",
+          "qrIsi": "Memfasilitasi transaksi real time di gudang, pengambilan data lebih cepat dan akurat. Hal ini pada gilirannya akan meningkatkan kecepatan operasi, keakuratan transaksi gudang, dan mengurangi campur tangan manusia serta kertas kerja/dokumentasi",
+          "ic": "INTEGRATION CAPABILITY(KEMAMPUAN INTEGRASI)",
+          "icIsi": "Integrasi mulus ke dalam sistem back end Anda, melalui metode integrasi yang berbeda. Tingkatkan akurasi dan kurangi persyaratan untuk operator entri data",
+          "hv": "HIGH VISIBILITY(VISIBILITAS TINGGI)",
+          "hvIsi": "Dapat menggunakan modul tambahan untuk Dashboard, Business Intelligence (BI) dan Reports",
+          "OC": "Klien kami",
+          "FAQ": "Pertanyaan yang Sering Diajukan",
+          "FAQ1": "Industri apa saja yang dapat menggunakan Ailox wms?",
+          "FAQ1isi": "Semua industri yang memiliki gudang dapat dan harus menggunakan sistem manajemen gudang atau WMS. Baik itu industri manufaktur, retail, sewa gudang, 3PL dan lain-lain.",
+          "FAQ2": "Gudang seperti apa yang bisa menggunakan Ailox wms?",
+          "FAQ2isi": "Hampir semua gudang bisa menggunakan Ailox wms. Baik itu gudang yang memiliki penyimpanan dengan menggunakan Selective Racking, Double Deep, Drive-in, Single atau Multi Level Floor, Open Yard dan lain-lain.",
+          "FAQ3": "Berapa lama waktu yang dibutuhkan untuk implementasi?",
+          "FAQ3isi": "Waktu pelaksanaannya bervariasi, tergantung dari ukuran gudang, operasional, jenis barang dan beberapa parameter lainnya. Namun secara umum, jika tidak ada faktor tertentu, pelaksanaan membutuhkan waktu 3 (tiga) bulan dari Kick-off hingga Live.",
+          "FAQ4": "Apa harus beli atau ada sistem sewa wms ailox?",
+          "FAQ4isi": "Ailox wms memiliki dua jenis lisensi:",
+          "FAQ4isi1": "1. Yang pertama dengan membeli software Ailox WMS dan menginstalnya di server gudang (on-premises).",
+          "FAQ4isi2": "2. Cara kedua adalah dengan menyewa (SaaS) dimana pembayaran dapat dilakukan setiap 3 (tiga) bulan sekali. Untuk SaaS software menggunakan Ailox wms SaaS yang ada di server kami, dan dapat diakses dari mana saja dengan menggunakan jaringan internet.",
+          "FAQ5": "Apa yang Anda perlukan untuk dapat menjalankan Ailox wms?",
+          "FAQ5isi": "Ailox wms dapat dijalankan dalam mode genggam/tanpa kertas atau dalam mode berbasis kertas. Perangkat yang dibutuhkan adalah server, PC, mobile computing dengan scanner 1D/2D (berbasis android), printer barcode, access point.",
+          "cu": "Hubungi kami",
+          "name": "Nama",
+          "email": "Email",
+          "message": "Pesan",
+          "send": "Kirim",
+          "link": "Tautan",
+          "sosmed": "Media Sosial",
+
+        },
+      };
+
+      $(document).ready(function() {
+        // The default language is English
+        var lang = "en";
+        $(".lang").each(function(index, element) {
+          $(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+      });
+
+      // get/set the selected language
+      $(".translate").click(function() {
+        var lang = $(this).attr("id");
+
+        $(".lang").each(function(index, element) {
+          $(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+      });
 
 
 
+    const pilihan = document.querySelector('#pilih');
+    const bahasa = document.querySelector('#bahasa');
 
-    // const bahasa = document.querySelector('#bahasa');
-    // const bahasaMenu = document.querySelector('#bahasa-pilih');
-    
-    // bahasa.addEventListener('click', function() {
-    //     bahasa.classList.toggle('bahasa-active');  
-    //     bahasaMenu.classList.toggle('hidden');
+pilihan.addEventListener('click', function() {
+    pilihan.classList.toggle('pilihan-active');  
+    bahasa.classList.toggle('hidden');
+});
 
-    // });
+window.addEventListener('click', function(e){
+  if(e.target != pilihan && e.target !=bahasa) {
+    pilihan.classList.remove('pilihan-active');
+    bahasa.classList.add('hidden');
+  }
+});
 
 
-    (function() {
-        var gtConstEvalStartTime = new Date();
-        var c = "Translate",
-            g = this || self;
-    
-        function h(a, b) {
-            a = a.split(".");
-            var d = g;
-            a[0] in d || "undefined" == typeof d.execScript || d.execScript("var " + a[0]);
-            for (var e; a.length && (e = a.shift());) a.length || void 0 === b ? d[e] && d[e] !== Object.prototype[e] ? d = d[e] : d = d[e] = {} : d[e] = b
-        }
-    
-        function k(a, b) {
-            function d() {}
-            d.prototype = b.prototype;
-            a.ka = b.prototype;
-            a.prototype = new d;
-            a.prototype.constructor = a;
-            a.ja = function(e, f, v) {
-                for (var w = Array(arguments.length - 2), n = 2; n < arguments.length; n++) w[n - 2] = arguments[n];
-                return b.prototype[f].apply(e, w)
-            }
-        }
-    
-        function l(a) {
-            return a
-        };
-    
-        function m() {
-            return "[msg_undefined]"
-        }
-        var p = {};
-        (function() {
-            if (void 0 == window.CLOSURE_DEFINES || window.CLOSURE_DEFINES["te.msg.EMBED_MESSAGES"]) {
-                p = {
-                    Y: function() {
-                        return MSG_TRANSLATE
-                    },
-                    m: function() {
-                        return MSG_CANCEL
-                    },
-                    s: function() {
-                        return MSG_CLOSE
-                    },
-                    K: function() {
-                        return MSGFUNC_PAGE_TRANSLATED_TO
-                    },
-                    Z: function() {
-                        return MSGFUNC_TRANSLATED_TO
-                    },
-                    B: function() {
-                        return MSG_GENERAL_ERROR
-                    },
-                    D: function() {
-                        return MSG_LANGUAGE_UNSUPPORTED
-                    },
-                    F: function() {
-                        return MSG_LEARN_MORE
-                    },
-                    L: function() {
-                        return MSGFUNC_POWERED_BY
-                    },
-                    ba: function() {
-                        return MSG_TRANSLATE_PRODUCT_NAME
-                    },
-                    da: function() {
-                        return MSG_TRANSLATION_IN_PROGRESS
-                    },
-                    aa: function() {
-                        return MSGFUNC_TRANSLATE_PAGE_TO
-                    },
-                    ia: function() {
-                        return MSGFUNC_VIEW_PAGE_IN
-                    },
-                    M: function() {
-                        return MSG_RESTORE
-                    },
-                    U: function() {
-                        return MSG_SSL_INFO_LOCAL_FILE
-                    },
-                    V: function() {
-                        return MSG_SSL_INFO_SECURE_PAGE
-                    },
-                    T: function() {
-                        return MSG_SSL_INFO_INTRANET_PAGE
-                    },
-                    N: function() {
-                        return MSG_SELECT_LANGUAGE
-                    },
-                    fa: function() {
-                        return MSGFUNC_TURN_OFF_TRANSLATION
-                    },
-                    ea: function() {
-                        return MSGFUNC_TURN_OFF_FOR
-                    },
-                    l: function() {
-                        return MSG_ALWAYS_HIDE_AUTO_POPUP_BANNER
-                    },
-                    I: function() {
-                        return MSG_ORIGINAL_TEXT
-                    },
-                    J: function() {
-                        return MSG_ORIGINAL_TEXT_NO_COLON
-                    },
-                    A: function() {
-                        return MSG_FILL_SUGGESTION
-                    },
-                    W: function() {
-                        return MSG_SUBMIT_SUGGESTION
-                    },
-                    S: function() {
-                        return MSG_SHOW_TRANSLATE_ALL
-                    },
-                    R: function() {
-                        return MSG_SHOW_RESTORE_ALL
-                    },
-                    O: function() {
-                        return MSG_SHOW_CANCEL_ALL
-                    },
-                    ca: function() {
-                        return MSG_TRANSLATE_TO_MY_LANGUAGE
-                    },
-                    $: function() {
-                        return MSGFUNC_TRANSLATE_EVERYTHING_TO
-                    },
-                    P: function() {
-                        return MSG_SHOW_ORIGINAL_LANGUAGES
-                    },
-                    H: function() {
-                        return MSG_OPTIONS
-                    },
-                    ga: function() {
-                        return MSG_TURN_OFF_TRANSLATION_FOR_THIS_SITE
-                    },
-                    G: function() {
-                        return MSG_MANAGE_TRANSLATION_FOR_THIS_SITE
-                    },
-                    j: function() {
-                        return MSG_ALT_SUGGESTION
-                    },
-                    h: function() {
-                        return MSG_ALT_ACTIVITY_HELPER_TEXT
-                    },
-                    i: function() {
-                        return MSG_ALT_AND_CONTRIBUTE_ACTIVITY_HELPER_TEXT
-                    },
-                    ha: function() {
-                        return MSG_USE_ALTERNATIVES
-                    },
-                    v: function() {
-                        return MSG_DRAG_TIP
-                    },
-                    o: function() {
-                        return MSG_CLICK_FOR_ALT
-                    },
-                    u: function() {
-                        return MSG_DRAG_INSTUCTIONS
-                    },
-                    X: function() {
-                        return MSG_SUGGESTION_SUBMITTED
-                    },
-                    C: function() {
-                        return MSG_LANGUAGE_TRANSLATE_WIDGET
-                    }
-                };
-                for (var a in p)
-                    if (p[a] !== Object.prototype[p[a]]) try {
-                        p[a] = p[a].call(null)
-                    } catch (b) {
-                        p[a] = m
-                    }
-            } else a =
-                function(b) {
-                    return function() {
-                        return b
-                    }
-                }, p = {
-                    Y: a(0),
-                    m: a(1),
-                    s: a(2),
-                    K: a(3),
-                    Z: a(4),
-                    B: a(5),
-                    D: a(45),
-                    F: a(6),
-                    L: a(7),
-                    ba: a(8),
-                    da: a(9),
-                    aa: a(10),
-                    ia: a(11),
-                    M: a(12),
-                    U: a(13),
-                    V: a(14),
-                    T: a(15),
-                    N: a(16),
-                    fa: a(17),
-                    ea: a(18),
-                    l: a(19),
-                    I: a(20),
-                    A: a(21),
-                    W: a(22),
-                    S: a(23),
-                    R: a(24),
-                    O: a(25),
-                    ca: a(26),
-                    $: a(27),
-                    P: a(28),
-                    H: a(29),
-                    ga: a(30),
-                    j: a(32),
-                    h: a(33),
-                    ha: a(34),
-                    v: a(35),
-                    o: a(36),
-                    u: a(37),
-                    X: a(38),
-                    G: a(39),
-                    i: a(40),
-                    J: a(41),
-                    C: a(46)
-                }
-        })();
-        var q = {},
-            MSG_TRANSLATE = c;
-        q[0] = MSG_TRANSLATE;
-        var MSG_CANCEL = "Cancel";
-        q[1] = MSG_CANCEL;
-        var MSG_CLOSE = "Close";
-        q[2] = MSG_CLOSE;
-    
-        function MSGFUNC_PAGE_TRANSLATED_TO(a) {
-            return "Google has automatically translated this page to: " + a
-        }
-        q[3] = MSGFUNC_PAGE_TRANSLATED_TO;
-    
-        function MSGFUNC_TRANSLATED_TO(a) {
-            return "Translated to: " + a
-        }
-        q[4] = MSGFUNC_TRANSLATED_TO;
-        var MSG_GENERAL_ERROR = "Error: The server could not complete your request. Try again later.";
-        q[5] = MSG_GENERAL_ERROR;
-        var MSG_LEARN_MORE = "Learn more";
-        q[6] = MSG_LEARN_MORE;
-    
-        function MSGFUNC_POWERED_BY(a) {
-            return "Powered by " + a
-        }
-        q[7] = MSGFUNC_POWERED_BY;
-        var MSG_TRANSLATE_PRODUCT_NAME = c;
-        q[8] = MSG_TRANSLATE_PRODUCT_NAME;
-        var MSG_TRANSLATION_IN_PROGRESS = "Translation in progress";
-        q[9] = MSG_TRANSLATION_IN_PROGRESS;
-    
-        function MSGFUNC_TRANSLATE_PAGE_TO(a) {
-            return "Translate this page to: " + (a + " using Google Translate?")
-        }
-        q[10] = MSGFUNC_TRANSLATE_PAGE_TO;
-    
-        function MSGFUNC_VIEW_PAGE_IN(a) {
-            return "View this page in: " + a
-        }
-        q[11] = MSGFUNC_VIEW_PAGE_IN;
-        var MSG_RESTORE = "Show original";
-        q[12] = MSG_RESTORE;
-        var MSG_SSL_INFO_LOCAL_FILE = "The content of this local file will be sent to Google for translation using a secure connection.";
-        q[13] = MSG_SSL_INFO_LOCAL_FILE;
-        var MSG_SSL_INFO_SECURE_PAGE = "The content of this secure page will be sent to Google for translation using a secure connection.";
-        q[14] = MSG_SSL_INFO_SECURE_PAGE;
-        var MSG_SSL_INFO_INTRANET_PAGE = "The content of this intranet page will be sent to Google for translation using a secure connection.";
-        q[15] = MSG_SSL_INFO_INTRANET_PAGE;
-        var MSG_SELECT_LANGUAGE = "Select Language";
-        q[16] = MSG_SELECT_LANGUAGE;
-    
-        function MSGFUNC_TURN_OFF_TRANSLATION(a) {
-            return "Turn off " + (a + " translation")
-        }
-        q[17] = MSGFUNC_TURN_OFF_TRANSLATION;
-    
-        function MSGFUNC_TURN_OFF_FOR(a) {
-            return "Turn off for: " + a
-        }
-        q[18] = MSGFUNC_TURN_OFF_FOR;
-        var MSG_ALWAYS_HIDE_AUTO_POPUP_BANNER = "Always hide";
-        q[19] = MSG_ALWAYS_HIDE_AUTO_POPUP_BANNER;
-        var MSG_ORIGINAL_TEXT = "Original text:";
-        q[20] = MSG_ORIGINAL_TEXT;
-        var MSG_FILL_SUGGESTION = "Contribute a better translation";
-        q[21] = MSG_FILL_SUGGESTION;
-        var MSG_SUBMIT_SUGGESTION = "Contribute";
-        q[22] = MSG_SUBMIT_SUGGESTION;
-        var MSG_SHOW_TRANSLATE_ALL = "Translate all";
-        q[23] = MSG_SHOW_TRANSLATE_ALL;
-        var MSG_SHOW_RESTORE_ALL = "Restore all";
-        q[24] = MSG_SHOW_RESTORE_ALL;
-        var MSG_SHOW_CANCEL_ALL = "Cancel all";
-        q[25] = MSG_SHOW_CANCEL_ALL;
-        var MSG_TRANSLATE_TO_MY_LANGUAGE = "Translate sections to my language";
-        q[26] = MSG_TRANSLATE_TO_MY_LANGUAGE;
-    
-        function MSGFUNC_TRANSLATE_EVERYTHING_TO(a) {
-            return "Translate everything to " + a
-        }
-        q[27] = MSGFUNC_TRANSLATE_EVERYTHING_TO;
-        var MSG_SHOW_ORIGINAL_LANGUAGES = "Show original languages";
-        q[28] = MSG_SHOW_ORIGINAL_LANGUAGES;
-        var MSG_OPTIONS = "Options";
-        q[29] = MSG_OPTIONS;
-        var MSG_TURN_OFF_TRANSLATION_FOR_THIS_SITE = "Turn off translation for this site";
-        q[30] = MSG_TURN_OFF_TRANSLATION_FOR_THIS_SITE;
-        q[31] = null;
-        var MSG_ALT_SUGGESTION = "Show alternative translations";
-        q[32] = MSG_ALT_SUGGESTION;
-        var MSG_ALT_ACTIVITY_HELPER_TEXT = "Click on words above to get alternative translations";
-        q[33] = MSG_ALT_ACTIVITY_HELPER_TEXT;
-        var MSG_USE_ALTERNATIVES = "Use";
-        q[34] = MSG_USE_ALTERNATIVES;
-        var MSG_DRAG_TIP = "Drag with shift key to reorder";
-        q[35] = MSG_DRAG_TIP;
-        var MSG_CLICK_FOR_ALT = "Click for alternative translations";
-        q[36] = MSG_CLICK_FOR_ALT;
-        var MSG_DRAG_INSTUCTIONS = "Hold down the shift key, click, and drag the words above to reorder.";
-        q[37] = MSG_DRAG_INSTUCTIONS;
-        var MSG_SUGGESTION_SUBMITTED = "Thank you for contributing your translation suggestion to Google Translate.";
-        q[38] = MSG_SUGGESTION_SUBMITTED;
-        var MSG_MANAGE_TRANSLATION_FOR_THIS_SITE = "Manage translation for this site";
-        q[39] = MSG_MANAGE_TRANSLATION_FOR_THIS_SITE;
-        var MSG_ALT_AND_CONTRIBUTE_ACTIVITY_HELPER_TEXT = "Click a word for alternative translations, or double-click to edit directly";
-        q[40] = MSG_ALT_AND_CONTRIBUTE_ACTIVITY_HELPER_TEXT;
-        var MSG_ORIGINAL_TEXT_NO_COLON = "Original text";
-        q[41] = MSG_ORIGINAL_TEXT_NO_COLON;
-        q[42] = c;
-        q[43] = c;
-        q[44] = "Your correction has been submitted.";
-        var MSG_LANGUAGE_UNSUPPORTED = "Error: The language of the webpage is not supported.";
-        q[45] = MSG_LANGUAGE_UNSUPPORTED;
-        var MSG_LANGUAGE_TRANSLATE_WIDGET = "Language Translate Widget";
-        q[46] = MSG_LANGUAGE_TRANSLATE_WIDGET;
-    
-        function r(a) {
-            if (Error.captureStackTrace) Error.captureStackTrace(this, r);
-            else {
-                var b = Error().stack;
-                b && (this.stack = b)
-            }
-            a && (this.message = String(a))
-        }
-        k(r, Error);
-        r.prototype.name = "CustomError";
-    
-        function t(a, b) {
-            a = a.split("%s");
-            for (var d = "", e = a.length - 1, f = 0; f < e; f++) d += a[f] + (f < b.length ? b[f] : "%s");
-            r.call(this, d + a[e])
-        }
-        k(t, r);
-        t.prototype.name = "AssertionError";
-    
-        function u(a, b) {
-            throw new t("Failure" + (a ? ": " + a : ""), Array.prototype.slice.call(arguments, 1));
-        };
-        var x;
-    
-        function y(a, b) {
-            this.g = b === z ? a : ""
-        }
-        y.prototype.toString = function() {
-            return this.g + ""
-        };
-        var z = {};
-    
-        function _exportMessages() {
-            h("google.translate.m", q)
-        }
-    
-        function A(a) {
-            var b = document.getElementsByTagName("head")[0];
-            b || (b = document.body.parentNode.appendChild(document.createElement("head")));
-            b.appendChild(a)
-        }
-    
-        function _loadJs(a) {
-            var b = document;
-            var d = "SCRIPT";
-            "application/xhtml+xml" === b.contentType && (d = d.toLowerCase());
-            d = b.createElement(d);
-            d.type = "text/javascript";
-            d.charset = "UTF-8";
-            if (void 0 === x) {
-                b = null;
-                var e = g.trustedTypes;
-                if (e && e.createPolicy) {
-                    try {
-                        b = e.createPolicy("goog#html", {
-                            createHTML: l,
-                            createScript: l,
-                            createScriptURL: l
-                        })
-                    } catch (v) {
-                        g.console && g.console.error(v.message)
-                    }
-                    x = b
-                } else x = b
-            }
-            a = (b = x) ? b.createScriptURL(a) : a;
-            a = new y(a, z);
-            a instanceof y && a.constructor === y ? a = a.g : (b = typeof a, u("expected object of type TrustedResourceUrl, got '" +
-                a + "' of type " + ("object" != b ? b : a ? Array.isArray(a) ? "array" : b : "null")), a = "type_error:TrustedResourceUrl");
-            d.src = a;
-            var f;
-            a = (d.ownerDocument && d.ownerDocument.defaultView || window).document;
-            (f = (a = null === (f = a.querySelector) || void 0 === f ? void 0 : f.call(a, "script[nonce]")) ? a.nonce || a.getAttribute("nonce") || "" : "") && d.setAttribute("nonce", f);
-            A(d)
-        }
-    
-        function _loadCss(a) {
-            var b = document.createElement("link");
-            b.type = "text/css";
-            b.rel = "stylesheet";
-            b.charset = "UTF-8";
-            b.href = a;
-            A(b)
-        }
-    
-        function _isNS(a) {
-            a = a.split(".");
-            for (var b = window, d = 0; d < a.length; ++d)
-                if (!(b = b[a[d]])) return !1;
-            return !0
-        }
-    
-        function _setupNS(a) {
-            a = a.split(".");
-            for (var b = window, d = 0; d < a.length; ++d) b.hasOwnProperty ? b.hasOwnProperty(a[d]) ? b = b[a[d]] : b = b[a[d]] = {} : b = b[a[d]] || (b[a[d]] = {});
-            return b
-        }
-        h("_exportMessages", _exportMessages);
-        h("_loadJs", _loadJs);
-        h("_loadCss", _loadCss);
-        h("_isNS", _isNS);
-        h("_setupNS", _setupNS);
-        window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener("DOMContentLoaded", function() {
-            document.readyState = "complete"
-        }, !1);
-        if (_isNS('google.translate.Element')) {
-            return
-        }(function() {
-            var c = _setupNS('google.translate._const');
-            c._cest = gtConstEvalStartTime;
-            gtConstEvalStartTime = undefined;
-            c._cl = 'en-GB';
-            c._cuc = 'googleTranslateElementInit';
-            c._cac = '';
-            c._cam = '';
-            c._ctkk = '450465.1037093230';
-            var h = 'translate.googleapis.com';
-            var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
-            var b = s + h;
-            c._pah = h;
-            c._pas = s;
-            c._pbi = b + '/translate_static/img/te_bk.gif';
-            c._pci = b + '/translate_static/img/te_ctrl3.gif';
-            c._pli = b + '/translate_static/img/loading.gif';
-            c._plla = h + '/translate_a/l';
-            c._pmi = b + '/translate_static/img/mini_google.png';
-            c._ps = b + '/translate_static/css/translateelement.css';
-            c._puh = 'translate.google.com';
-            _loadCss(c._ps);
-            _loadJs(b + '/translate_static/js/element/main_en-GB.js');
-        })();
-    })();
-    
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'vi',
-            includedLanguages: 'en,en-GB,id,en-US,ko,ja,',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element')
-    }
-    $(".hover").mouseleave(function() {
-        $(this).removeClass("hover")
-    });
-    
