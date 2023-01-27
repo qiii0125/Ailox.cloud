@@ -793,14 +793,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-sky-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
-}
-
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-sky-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -1110,7 +1110,8 @@ body {
 
 #select:hover #bahasa {
   display: block;
-  transition: ease-in-out;
+  position: relative;
+  transition: linear;
   transition-duration: 300ms;
 }
 
