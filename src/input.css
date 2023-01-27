@@ -36,6 +36,12 @@ body {
     content: "\2212";
 }
 
+#select:hover #bahasa {
+    display: block;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+}
+
 /* #home {
     background-color: #B7CBD7;
 } */

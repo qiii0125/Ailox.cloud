@@ -7,12 +7,12 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
-// window.addEventListener('click', function(e){
-//   if(e.target != hamburger && e.target !=navMenu) {
-//     hamburger.classList.remove('hamburger-active');
-//     navMenu.classList.add('hidden');
-//   }
-// });
+window.addEventListener('click', function(e){
+  if(e.target != hamburger && e.target !=navMenu) {
+    hamburger.classList.remove('hamburger-active');
+    navMenu.classList.add('hidden');
+  }
+});
 
 //navbar fix
 window.onscroll = function() {
@@ -51,6 +51,7 @@ ItemHeaders.forEach(ItemHeader => {
             "pilih": "Select Languages",
             "eng": "English",
             "ind": "Indonesian",
+            "jpn": "Japan",
           "Home": "Home",
           "About": "About Us",
           "Feature": "Feature",
@@ -107,6 +108,7 @@ ItemHeaders.forEach(ItemHeader => {
             "pilih": "Pilih Bahasa",
             "eng": "Inggris",
             "ind": "Indonesia",
+            "jpn": "Jepang",
           "Home": "Beranda",
           "About": "Tentang Kami",
           "Feature": "Fitur",
@@ -159,6 +161,63 @@ ItemHeaders.forEach(ItemHeader => {
           "sosmed": "Media Sosial",
 
         },
+        "jp": {
+          "pilih": "言語を選択",
+          "eng": "英語",
+          "ind": "インドネシア語",
+          "jpn": "日本",
+        "Home": "家",
+        "About": "私たちに関しては",
+        "Feature": "特徴",
+        "Client": "クライアント",
+        "Contact": "コンタクト",
+        "start": "始める",
+        "whyus": "なんで私達なの",
+        "whatis": "AiloxCloudとは?",
+        "ACis": "AiloxCloud は、パブリック インターネットまたは特別なプライベート ネットワーク接続のいずれかを介してアクセスするクラウド コンピューティング プロバイダーを介して、インターネット上のデータおよびファイル ストレージを可能にするクラウド コンピューティング モデルです。",
+        "whyAC": "AiloxCloud を選ぶ理由",
+        "why1": "サービスレベルを上げる",
+        "why2": "精度を上げる",
+        "why3": "視認性を高める",
+        "why4": "速度を上げます",
+        "why5": "運用コストを削減",
+        "ACfeature": "AiloxCloud 機能",
+        "acFeature": "お客様の特定の要件に合わせてカスタマイズされたソリューションを設計するには、まず、お客様の基本的な目的と主要な目的を調査して理解することから始めます。 次に、お客様の運用および IT チームと話し合い、お客様の運用に最も適した機能フローとビジネス プロセスを定義すると同時に、業界のベスト プラクティスに関するフィードバックを提供します。 合意された機能フローに基づいて、お客様のビジネスとプロセスの要件を満たすために、特定のサプライ チェーン ソリューションを設計および開発します。",
+        "inbound": "INBOUND(インバウンド)",
+        "inboundIsi": "商品を受け取り、保管するプロセス。 受け取った商品は、生産、サプライヤーの転送、または返品からのものです。",
+        "inventory": "INVENTORY(在庫)",
+        "inventoryIsi": "手持ち在庫と移動中のアイテムの詳細と概要を表示します。 在庫には、倉庫にある商品の性質に応じた多くの情報があります。",
+        "outbound": "OUTBOUND(アウトバウンド)",
+        "outboundIsi": "好みに応じて、個別に、またはバッチに基づいて収集します。 支出のプロセスをスピードアップし、オペレーターの分業もスピードアップします。",
+        "qr": "QR CODE/BARCODE(QRコード)",
+        "qrIsi": "倉庫でのリアルタイムの取引を促進し、より迅速かつ正確なデータ収集を実現します。 これにより、操作の速度、倉庫取引の正確さが向上し、人的介入と事務処理/文書化が減少します。",
+        "ic": "INTEGRATION CAPABILITY",
+        "icIsi": "さまざまな統合方法による、バックエンド システムへのシームレスな統合。 精度を向上させ、データ入力オペレーターの要件を軽減します",
+        "hv": "HIGH VISIBILITY(高い視認性)",
+        "hvIsi": "ダッシュボード、ビジネス インテリジェンス (BI)、およびレポート用の追加モジュールを使用できます",
+        "OC": "当社のクライアント",
+        "FAQ": "よくある質問",
+        "FAQ1": "Ailox wms を使用できる業界は?",
+        "FAQ1isi": "倉庫を持つすべての業界は、倉庫管理システムまたは WMS を使用できますし、使用する必要があります。 製造業、小売業、レンタル倉庫、3PLなど。",
+        "FAQ2": "Ailox wms はどのような倉庫で使用できますか?",
+        "FAQ2isi": "ほとんどすべての倉庫で Ailox wms を使用できます。 セレクティブ ラック、ダブル ディープ、ドライブイン、シングルまたはマルチレベル フロア、オープン ヤードなどを使用したストレージを備えた倉庫であるかどうか。",
+        "FAQ3": "実装にはどのくらいかかりますか？",
+        "FAQ3isi": "実装時間は、倉庫のサイズ、操作、商品の種類、およびその他のいくつかのパラメーターによって異なります。 ただし、一般的には、特定の要因がなければ、実装にはキックオフからライブまで 3 か月かかります。",
+        "FAQ4": "Ailox wms を購入する必要がありますか、それともレンタル システムはありますか?",
+        "FAQ4isi": "Ailox wms には 2 種類のライセンスがあります。",
+        "FAQ4isi1": "1. 1 つ目は、Ailox WMS ソフトウェアを購入し、倉庫サーバー (オンプレミス) にインストールすることです。",
+        "FAQ4isi2": "2. 2 つ目は、3 か月ごとに支払いができるレンタル (SaaS) です。 SaaS の場合、ソフトウェアは当社のサーバーにある Ailox wms SaaS を使用し、インターネット ネットワークを使用してどこからでもアクセスできます。",
+        "FAQ5": "Ailox wms を実行するには何が必要ですか?",
+        "FAQ5isi": "Ailox wms は、ハンドヘルド/ペーパーレス モードまたはペーパーベース モードで実行できます。 必要なデバイスは、サーバー、PC、1D/2D スキャナー (Android ベース) を備えたモバイル コンピューティング、バーコード プリンター、アクセス ポイントです。",
+        "cu": "お問い合わせ",
+        "name": "名前",
+        "email": "電子メールアドレス",
+        "message": "メッセージ",
+        "send": "送信",
+        "link": "リンク",
+        "sosmed": "ソーシャルメディア",
+
+      },
       };
 
       $(document).ready(function() {
@@ -180,19 +239,19 @@ ItemHeaders.forEach(ItemHeader => {
 
 
 
-    const pilihan = document.querySelector('#pilih');
-    const bahasa = document.querySelector('#bahasa');
+//     const pilihan = document.querySelector('#pilih');
+//     const bahasa = document.querySelector('#bahasa');
 
-pilihan.addEventListener('click', function() {
-    pilihan.classList.toggle('pilihan-active');  
-    bahasa.classList.toggle('hidden');
-});
+// pilihan.addEventListener('click', function() {
+//     pilihan.classList.toggle('pilihan-active');  
+//     bahasa.classList.toggle('hidden');
+// });
 
-window.addEventListener('click', function(e){
-  if(e.target != pilihan && e.target !=bahasa) {
-    pilihan.classList.remove('pilihan-active');
-    bahasa.classList.add('hidden');
-  }
-});
+// window.addEventListener('click', function(e){
+//   if(e.target != pilihan && e.target !=bahasa) {
+//     pilihan.classList.remove('pilihan-active');
+//     bahasa.classList.add('hidden');
+//   }
+// });
 
 

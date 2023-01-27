@@ -20,9 +20,9 @@
                     </div>
                     <div class="flex items-center px-4">
                         <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                            <span class="hamburger-line transition duration-300 in-ease-out origin-top-left"></span>
-                            <span class="hamburger-line transition duration-300 in-ease-out"></span>
-                            <span class="hamburger-line transition duration-300 in-ease-out origin-top-left"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         </button>
                         
                         <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-500 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none rounded-none ">
@@ -41,14 +41,17 @@
                                     </ul>
                                     
                                 </li> -->
-                                <li class="group cursor-pointer relative" >
+                                <li class="group cursor-pointer inline-block relative " id="select">
                                     <p href="#" id="pilih" key="pilih" class="lang text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Select Languages:</p>
                                     <ul class="hidden bg-sky-100 relative rounded-lg shadow-lg " id="bahasa">
                                         <li >
-                                            <p href="#" key="ing" id="en" class="lang relative translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white">English</p>
+                                            <p href="#" key="ing" id="en" class="lang relative block translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white ">English</p>
                                         </li>
                                         <li >
-                                            <p href="#" key="ind" id="id" class="lang relative translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white">Indonesian</p>
+                                            <p href="#" key="ind" id="id" class="lang relative block translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white ">Indonesian</p>
+                                        </li>
+                                        <li >
+                                            <p href="#" key="jpn" id="jp" class="lang relative block translate text-base text-dark py-2 mx-8 flex hover:text-primary dark:text-white ">Japan</p>
                                         </li>
                                     </ul>
                                 </li>
