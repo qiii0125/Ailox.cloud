@@ -7,12 +7,12 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
-window.addEventListener('click', function(e){
-  if(e.target != hamburger && e.target !=navMenu) {
-    hamburger.classList.remove('hamburger-active');
-    navMenu.classList.add('hidden');
-  }
-});
+// window.addEventListener('click', function(e){
+//   if(e.target != hamburger && e.target !=navMenu) {
+//     hamburger.classList.remove('hamburger-active');
+//     navMenu.classList.add('hidden');
+//   }
+// });
 
 //navbar fix
 window.onscroll = function() {
@@ -48,13 +48,13 @@ ItemHeaders.forEach(ItemHeader => {
 
     var arrLang = {
         "en": {
-            "pilih": "Select Languages",
             "eng": "English",
             "ind": "Indonesian",
             "jpn": "Japan",
             "kor": "Korea",
           "Home": "Home",
           "About": "About Us",
+          "Product": "Our Product",
           "Feature": "Feature",
           "Client": "Clients",
           "Contact": "Contact",
@@ -113,6 +113,7 @@ ItemHeaders.forEach(ItemHeader => {
             "kor": "Korea",
           "Home": "Beranda",
           "About": "Tentang Kami",
+          "Product": "Produk Kami",
           "Feature": "Fitur",
           "Client": "Klien",
           "Contact": "Kontak",
@@ -171,6 +172,7 @@ ItemHeaders.forEach(ItemHeader => {
           "kor": "韓国",
         "Home": "家",
         "About": "私たちに関しては",
+        "Product": "私たちの製品",
         "Feature": "特徴",
         "Client": "クライアント",
         "Contact": "コンタクト",
@@ -230,6 +232,7 @@ ItemHeaders.forEach(ItemHeader => {
         "kor": "한국",
       "Home": "집",
       "About": "회사 소개",
+      "Product": "우리의 제품",
       "Feature": "특징",
       "Client": "클라이언트",
       "Contact": "연락하다",
@@ -282,6 +285,8 @@ ItemHeaders.forEach(ItemHeader => {
 
     },
 
+    
+
       };
 
       $(document).ready(function() {
@@ -301,10 +306,33 @@ ItemHeaders.forEach(ItemHeader => {
         });
       });
 
+     
+var country = document.getElementsByName('languages')[0];
+var cdrop = document.querySelector('#pilih'); 
 
+function update_country(el){
+  country.value = el.innerText;
+  cdrop.innerHTML = el.innerHTML;
+};
 
-//     const pilihan = document.querySelector('#pilih');
-//     const bahasa = document.querySelector('#bahasa');
+    // const pilihan = document.querySelector('#pilih');
+    // const bahasa = document.querySelector('#bahasa');
+    // options = document.querySelector("#bahasa");
+
+    // let countries = ["English", "Indonesian", "Japan", "Korea"];
+
+    // function addCountry() {
+    //   countries.forEach(country => {
+    //     let li =  `<li onClick="updateName(this)">${country}</li>`;
+    //     options.insertAdjacentHTML("beforeend", li);
+    //   });
+    // }
+
+    // addCountry();
+
+    // function updateName(selectedLi){
+    //   bahasa.firstElementChild.innerText = selectedLi.innerText
+    // }
 
 // pilihan.addEventListener('click', function() {
 //     pilihan.classList.toggle('pilihan-active');  
@@ -317,5 +345,13 @@ ItemHeaders.forEach(ItemHeader => {
 //     bahasa.classList.add('hidden');
 //   }
 // });
+
+
+// const wrapper = document.querySelector(".wrapper");
+// selectBtn = wrapper.querySelector(".select-btn");
+
+// selectBtn.addEventListener('click', () => {
+//   wrapper.classList.toggle()
+// })
 
 
