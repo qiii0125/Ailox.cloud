@@ -679,10 +679,6 @@ video {
   width: 100px;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .max-w-\[250px\] {
   max-width: 250px;
 }
@@ -1080,12 +1076,12 @@ body {
 }
 
 .hover1 li img {
-  transform: scale(1);
+  transform: scale(2);
   transition: .3s ease-in-out;
 }
 
 .hover1 li:hover img {
-  transform: scale(1.3);
+  transform: scale(2);
   /* background-color: #e0f2fe; */
 }
 
