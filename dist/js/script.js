@@ -315,24 +315,6 @@ function update_country(el){
   cdrop.innerHTML = el.innerHTML;
 };
 
-    // const pilihan = document.querySelector('#pilih');
-    // const bahasa = document.querySelector('#bahasa');
-    // options = document.querySelector("#bahasa");
-
-    // let countries = ["English", "Indonesian", "Japan", "Korea"];
-
-    // function addCountry() {
-    //   countries.forEach(country => {
-    //     let li =  `<li onClick="updateName(this)">${country}</li>`;
-    //     options.insertAdjacentHTML("beforeend", li);
-    //   });
-    // }
-
-    // addCountry();
-
-    // function updateName(selectedLi){
-    //   bahasa.firstElementChild.innerText = selectedLi.innerText
-    // }
 
 // pilihan.addEventListener('click', function() {
 //     pilihan.classList.toggle('pilihan-active');  
