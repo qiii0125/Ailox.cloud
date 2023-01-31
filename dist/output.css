@@ -1076,7 +1076,7 @@ body {
 }
 
 .hover1 li img {
-  transform: scale(2);
+  transform: scale(1);
   transition: .3s ease-in-out;
 }
 
