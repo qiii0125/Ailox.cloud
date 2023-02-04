@@ -320,6 +320,24 @@ function update_country(el){
 };
 
 
+// const  nama = document.myForm.name.value;
+// const  mail = document.myForm.mail.value;
+// const mailFormat = "email@example.com";
+
+// if (nama==null || mail==null){
+//   alert ("Name Can't Be Blank");
+//   return false;
+// } else if(mail != mailFormat) {
+//   alert ("Email Not Valid");
+//   return false;
+// }
+
+// const form = document.querySelector(form);
+
+// if (form = null) {
+
+// }
+
 // pilihan.addEventListener('click', function() {
 //     pilihan.classList.toggle('pilihan-active');  
 //     bahasa.classList.toggle('hidden');

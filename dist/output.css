@@ -852,6 +852,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .pt-36 {
   padding-top: 9rem;
 }
@@ -1107,7 +1112,7 @@ body {
 }
 
 #tanya {
-  padding: 4;
+  padding: 10;
   min-height: 3.5rem;
   line-height: 1.25rem;
   font-weight: bold;
