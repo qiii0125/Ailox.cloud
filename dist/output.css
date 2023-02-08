@@ -780,9 +780,14 @@ video {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
-.bg-sky-50 {
+.bg-latar3 {
   --tw-bg-opacity: 1;
-  background-color: rgb(240 249 255 / var(--tw-bg-opacity));
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-latar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 209 209 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -850,11 +855,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
 }
 
 .pt-36 {
@@ -1028,7 +1028,7 @@ body {
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
-  background-color: rgb(240 249 255 / var(--tw-bg-opacity));
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.8;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -1180,6 +1180,15 @@ img.goog-te-gadget-icon,
 #dark-toggle:checked ~ label div.toggle-circle {
   --tw-translate-x: 0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+#cloud {
+  -webkit-animation-name: slidingstep1;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .hover\:text-primary:hover {
@@ -1349,4 +1358,3 @@ img.goog-te-gadget-icon,
     width: 75%;
   }
 }
-
