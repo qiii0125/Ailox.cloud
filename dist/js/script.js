@@ -358,4 +358,12 @@ function update_country(el){
 //   wrapper.classList.toggle()
 // })
 
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
 
